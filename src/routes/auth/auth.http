@@ -1,0 +1,42 @@
+
+GET http://localhost:5000 
+
+
+###
+
+
+
+POST   http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "fullname": "siwar chouchen",
+  "email": "siwar@linked.com",
+  "password": "12345678+"
+ 
+}
+
+###
+
+
+
+POST   http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "fullname": "siwar chouchen",
+  "email": "wassim@linked.com",
+  "password": "12345678+"
+ 
+}
+###
+
+
+
+POST   http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "fullname": "wassim chouchen",
+  "password": "123456789"
+}

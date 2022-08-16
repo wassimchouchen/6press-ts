@@ -1,0 +1,21 @@
+
+
+
+POST   http://localhost:5000/api/users
+Content-Type: application/json
+Authorization: fraise eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZmE5NzNkNDBmYWU2MmNjNWM5OWQ1MyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYwNTkwNDk1fQ.J7EDuacfsgnc_i0EiceeSn21uiFZqorkHMQFDS1HeL8
+
+{
+ 
+}
+### 
+
+GET http://localhost:5000/api/users/:62fadde0fb29f0799612c1a5
+Content-Type: application/json
+
+
+### 
+
+DELETE  http://localhost:5000/api/users/:62fadde0fb29f0799612c1a5
+Content-Type: application/json
+
