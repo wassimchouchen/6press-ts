@@ -1,20 +1,49 @@
 
 
+GET http://localhost:5000
+Authorization:"fraise eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZmE5NzNkNDBmYWU2MmNjNWM5OWQ1MyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYwNjc2NTI0fQ.kJ9ZOb7gaER0vIK3lAIaRGuNK6uNOVFNdrvAbl4WJ5I"
+
+
+###
+GET   http://localhost:5000
+Content-Type: application/json
+
+
+
+
 ###
 
+Send Request
+POST http://localhost:5000/api/auth/login
+Content-Type:application/json
+{
+  "email":"jhondoe@gmail.com",
+  "password":"121111134"
+}
+###
 
-
-POST   http://localhost:5000/api/auth/login
+POST http://localhost:5000/api/auth/login
 Content-Type: application/json
 
 {
-  "email": "wassim@linked.com",
-  "password": "123456789"
+  "email": "wassimm@linked.com",
+  "password": "12345678+"
+ 
 }
-
 
 ###
 
+
+
+POST   http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "fullname": "siwar chouchen",
+  "email": "wassim@linked.com",
+  "password": "12345678+"
+ 
+}
 
 
 

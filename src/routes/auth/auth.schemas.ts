@@ -1,5 +1,5 @@
 import Joi from 'joi'
-import { mainModule } from 'process'
+// import { mainModule } from 'process'
 
 export const login = Joi.object({
   email: Joi.string().email().required(),

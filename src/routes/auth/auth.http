@@ -6,12 +6,11 @@ GET http://localhost:5000
 
 
 
-POST   http://localhost:5000/api/auth/register
+POST http://localhost:5000/api/auth/login
 Content-Type: application/json
 
 {
-  "fullname": "siwar chouchen",
-  "email": "siwar@linked.com",
+  "email": "wassim@linked.com",
   "password": "12345678+"
  
 }
@@ -38,5 +37,7 @@ Content-Type: application/json
 
 {
   "fullname": "wassim chouchen",
-  "password": "123456789"
+  "email": "nizarrr@linked.com",
+
+  "password": "12349"
 }

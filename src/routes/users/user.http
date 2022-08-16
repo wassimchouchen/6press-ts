@@ -6,16 +6,21 @@ Content-Type: application/json
 Authorization: fraise eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZmE5NzNkNDBmYWU2MmNjNWM5OWQ1MyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYwNTkwNDk1fQ.J7EDuacfsgnc_i0EiceeSn21uiFZqorkHMQFDS1HeL8
 
 {
- 
+ "email":"wassim@gmail.com",
+ "password":"hhhhhhh"
 }
 ### 
 
-GET http://localhost:5000/api/users/:62fadde0fb29f0799612c1a5
+GET http://localhost:5000/api/users/localhost:5000/api/users/62fafc7ef9f26c7a7d52e02d
 Content-Type: application/json
+
 
 
 ### 
 
-DELETE  http://localhost:5000/api/users/:62fadde0fb29f0799612c1a5
+PUT  http://localhost:5000/62fadde0fb29f0799612c1a5
 Content-Type: application/json
+{
+    "fullname":"nizar"
+}
 

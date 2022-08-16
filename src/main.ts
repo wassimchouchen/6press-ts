@@ -12,6 +12,13 @@ app.use(cors())
 app.use('/api', routes)
 app.use(errorHandler)
 
+app.use(express.urlencoded({extended:true}))
+app.get('/',async(req,res,next)=>{
+  console.log(req.headers['authorization'])
+  res.send('Hey man !')}
+)
+
+
 export default async function run() {
   await connectToDb()
   const port = process.env.PORT || 3000

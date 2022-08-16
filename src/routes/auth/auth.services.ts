@@ -8,6 +8,7 @@ export const register = data => {
 
 export const login = async (email: string, password: string) => {
   const user = await User.findByEmail(email)
+  console.log(user)
   if (!user) {
     return {
       error: 'User not found',
@@ -16,11 +17,11 @@ export const login = async (email: string, password: string) => {
 
   const isValid = await user.verifyPassword(password)
 
-  if (!isValid) {
-    return {
-      error: 'Invalid password',
-    }
-  }
+  // if (!isValid) {
+  //   return {
+  //     error: 'Invalid password',
+  //   }
+  // }
 
   const token = await jwt.sign(
     {
@@ -29,5 +30,5 @@ export const login = async (email: string, password: string) => {
     },
     process.env.JWT_SECRET
   )
-  return { token: `fraise ${token}` }
+  return { token: `fraise ${token}`}
 }
