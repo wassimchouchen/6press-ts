@@ -48,6 +48,9 @@ user.methods.verifyPassword = async function (password: string) {
 user.statics.findByEmail = function (email: string) {
   return this.findOne({ email })
 }
+user.statics.findBytitle = function (title: string) {
+  return this.findOne({ title })
+}
 
 user.pre('save', async function (next) {
   const salt = await bcrypt.genSalt(10)

@@ -10,8 +10,8 @@ POST http://localhost:5000/api/auth/login
 Content-Type: application/json
 
 {
-  "email": "nii@linked.com",
-  "password": "1235+"
+  "email": "wassim@linked.com",
+  "password": "12345678+"
  
 }
 
@@ -23,9 +23,9 @@ POST   http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-  "fullname": "nini chouchen",
-  "email": "nini@linked.com",
-  "password": "55448554+"
+  "fullname": "siwar chouchen",
+  "email": "wassim@linked.com",
+  "password": "12345678+"
  
 }
 ###

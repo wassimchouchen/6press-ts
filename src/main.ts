@@ -9,6 +9,7 @@ const app = express()
 app.use(morgan('dev'))
 app.use(json())
 app.use(cors())
+
 app.use('/api', routes)
 app.use(errorHandler)
 
