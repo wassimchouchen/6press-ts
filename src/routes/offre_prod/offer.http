@@ -1,0 +1,57 @@
+### 
+post http://localhost:3000/api/offer/create
+Content-Type: application/json
+
+{
+ "name": "siwarrrrr",
+ "category": "web" ,
+ "body" : "hey babe"
+}
+
+
+
+###
+post http://localhost:3000/api/offer/create
+Content-Type: application/json
+
+{
+ "name": "wassim",
+ "category": "IA"
+}
+
+
+
+###
+GET  http://localhost:3000/api/offer
+Content-Type: application/json
+
+
+
+###
+GET  http://localhost:3000/api/offer/6302157d4233363d3f7261be
+Content-Type: application/json
+
+
+
+
+###
+DELETE   http://localhost:3000/api/offer/6302157d4233363d3f7261be
+
+
+
+###
+
+DELETE   http://localhost:3000/api/offer/630223097b38d363309b703a
+Content-Type: application/json
+
+
+
+###
+PATCH    http://localhost:3000/api/offer/63021859cb60452a4256972f
+Content-Type: application/json
+
+{
+ "name": "niiiiiiiiiiiiiii",
+ "category": "cloudddd" ,
+ "body" : "hey mannnnn"
+}

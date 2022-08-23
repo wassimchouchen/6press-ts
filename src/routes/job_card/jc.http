@@ -6,13 +6,19 @@ GET http://localhost:5000
 
 
 
-POST http://localhost:5000/api/auth/login
+POST http://localhost:5000/api/job_card
 Content-Type: application/json
 
 {
-  "email": "wassim@linked.com",
-  "password": "12345678+"
- 
+  "company": "Joi.string().required()",
+  "location": "Joi.string().required()",
+  "date": "Joi.string()",
+  "tasks": "Joi.string().required()",
+  "about": "Joi.string().required()",
+  "requirements": "Joi.string().required()",
+  "applied": "Joi.number().required()",
+  "type": "Joi.string().required()",
+  "aboutCompany": "Joi.string().required()"
 }
 
 ###
