@@ -1,7 +1,7 @@
 import { Router } from 'express'
 // import { getOffers, getOffer, createOffer, deleteOffer, updateOffer }  from './jc.controllers'
 import * as controllers from './jc.controllers'
-// import { authenticate } from '../../utils'
+import { authenticate } from '../../utils'
 
 // export default Router()
 //   .get('/', [authenticate()], controllers.getJob_card)
@@ -12,9 +12,9 @@ import * as controllers from './jc.controllers'
 
   
 export default Router()
-.get('/', controllers.getOffers)
-.get('/:id', controllers.getOffer)
-.post('/create', controllers.createOffer)
-.delete('/:id', controllers.deleteOffer)
-.patch('/:id', controllers.updateOffer)
+.get('/' ,controllers.getOffers)
+.get('/:id' ,controllers.getOffer)
+.post('/create' ,controllers.createOffer)
+.delete('/:id' ,controllers.deleteOffer)
+.patch('/:id',controllers.updateOffer)
 

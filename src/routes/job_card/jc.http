@@ -1,49 +1,57 @@
-
-GET http://localhost:5000 
-
-
-###
-
-
-
-POST http://localhost:5000/api/job_card
+### 
+POST  http://localhost:5000/api/offer/create
 Content-Type: application/json
 
 {
-  "company": "Joi.string().required()",
-  "location": "Joi.string().required()",
-  "date": "Joi.string()",
-  "tasks": "Joi.string().required()",
-  "about": "Joi.string().required()",
-  "requirements": "Joi.string().required()",
-  "applied": "Joi.number().required()",
-  "type": "Joi.string().required()",
-  "aboutCompany": "Joi.string().required()"
+ "name": "siwarrrrr",
+ "category": "web" ,
+ "body" : "hey babe"
 }
 
+
+
 ###
-
-
-
-POST   http://localhost:5000/api/auth/register
+POST http://localhost:5000/api/offer/create
 Content-Type: application/json
 
 {
-  "fullname": "siwar chouchen",
-  "email": "wassim@linked.com",
-  "password": "12345678+"
- 
+ "name": "wassim",
+ "category": "IA"
 }
+
+
+
+###
+GET  http://localhost:5000/api/offer
+Content-Type: application/json
+
+
+
+###
+GET  http://localhost:5000/api/offer/6302157d4233363d3f7261be
+Content-Type: application/json
+
+
+
+
+###
+DELETE   http://localhost:5000/api/offer/6302157d4233363d3f7261be
+
+
+
 ###
 
+DELETE   http://localhost:5000/api/offer/630223097b38d363309b703a
+Content-Type: application/json
 
 
-POST   http://localhost:5000/api/auth/register
+
+###
+PATCH    http://localhost:5000/api/offer/63021859cb60452a4256972f
 Content-Type: application/json
 
 {
-  "fullname": "wassim chouchen",
-  "email": "nizarrr@linked.com",
-
-  "password": "12349"
+ "name": "niiiiiiiiiiiiiii",
+ "category": "cloudddd" ,
+ "body" : "hey mannnnn"
 }
